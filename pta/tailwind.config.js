@@ -9,7 +9,16 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'light-brown': '#483221',
+        'dark-brown': '#312217',
+        'light-yellow': '#fce5ac',
+      },
+      fontFamily: {
+        kumbha: ['"Kumbha Sans"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
