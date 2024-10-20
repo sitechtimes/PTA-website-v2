@@ -1,9 +1,11 @@
 <template>
     <div>
-      <AppFooter></AppFooter>
+      <slot></slot>
+      <AppLayoutFooter></AppLayoutFooter>
     </div>
   </template>
   
-  <script setup></script>
+  <script setup>
+</script>
   
   <style scoped></style>
