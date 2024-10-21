@@ -2,22 +2,22 @@
   <footer>
     <div id="sections" class="flex flex-col sm:flex-row my-7 mx-4 xl:mx-14 p-4">
       <div id="firstSection" class="flex-1 w-full lg:w-auto mx-4 mb-8 lg:mb-0">
-        <img src="/logo/pta-logo.B2o53BpU.png" alt="PTA Logo" class="w-4/12" />
-        <div id="links" class="my-5 text-md">
+        <img src="/logo/pta-logo.B2o53BpU.png" alt="PTA Logo" class="w-4/11" />
+        <div id="links" class="mt-5 text-md">
           <NuxtLink to="/">Home</NuxtLink> |
           <NuxtLink to="/Events">Events</NuxtLink> |
-          <NuxtLink to="/Contact Us">Contact Us</NuxtLink> |
+          <NuxtLink to="/Contact">Contact Us</NuxtLink> |
           <NuxtLink to="/Donate">Donate</NuxtLink>
         </div>
-        <h2 class="text-xs">SITHS PTA @2024</h2>
+        <h2 class="text-xs mt-2">SITHS PTA @2024</h2>
       </div>
-      <div id="secondSection" class="flex-1 w-full lg:w-auto mx-4 mb-8 lg:mb-0">
+      <div id="secondSection" class="flex-1 w-full lg:w-auto mx-4 mr-6 mb-8 lg:mb-0">
         <div id="email" class="flex my-4">
           <img src="/icons/envelope.svg" alt="Email" class="w-6">
           <h2 class="ml-3">sitechpta@gmail.com</h2>
         </div>
         <div id="location" class="flex my-4 mb-8">
-          <img src="/icons/location.png" alt="Location" class="w-6 h-7">
+          <img src="/icons/location.svg" alt="Location" class="w-5 h-6">
           <h2 class="ml-3">485 Clawson Street, Staten Island, NY 10306</h2>
         </div>
         <div id="social media" class="flex">
