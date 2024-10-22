@@ -1,9 +1,12 @@
 <template>
     <div>
       <slot />
+      <NavBar/>
     </div>
   </template>
   
-  <script setup></script>
+  <script setup>
+import NavBar from '~/components/AppLayout/AppLayout/NavBar.vue';
+</script>
   
   <style scoped></style>
