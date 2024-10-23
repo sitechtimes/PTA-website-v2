@@ -2,7 +2,7 @@
   <footer>
     <div id="sections" class="flex flex-col sm:flex-row my-7 mx-4 xl:mx-14 p-4">
       <div id="firstSection" class="flex-1 w-full lg:w-auto mx-4 mb-8 lg:mb-0">
-        <img src="/logo/pta-logo.B2o53BpU.png" alt="PTA Logo" class="w-4/11" />
+        <img src="/logo/pta-logo.png" alt="PTA Logo" class="w-4/11" />
         <div id="links" class="mt-5 text-md">
           <NuxtLink to="/">Home</NuxtLink> |
           <NuxtLink to="/Events">Events</NuxtLink> |
@@ -11,7 +11,7 @@
         </div>
         <h2 class="text-xs mt-2">SITHS PTA @2024</h2>
       </div>
-      <div id="secondSection" class="flex-1 w-full lg:w-auto mx-4 mr-6 mb-8 lg:mb-0">
+      <div id="secondSection" class="flex-1 w-full lg:w-auto mx-4 mb-8 lg:mb-0">
         <div id="email" class="flex my-4">
           <img src="/icons/envelope.svg" alt="Email" class="w-6">
           <h2 class="ml-3">sitechpta@gmail.com</h2>
@@ -22,10 +22,10 @@
         </div>
         <div id="social media" class="flex">
           <a href="https://www.instagram.com/_sammytheseagull/">
-            <img src="/social media/instagram.svg" alt="Instagram" class="mr-8">
+            <img src="/social-media/instagram.svg" alt="Instagram" class="mr-8">
           </a>
           <a href="https://www.facebook.com/SITECHPTA/">
-            <img src="/social media/facebook.svg" alt="Facebook">
+            <img src="/social-media/facebook.svg" alt="Facebook">
           </a>
         </div>
       </div>
