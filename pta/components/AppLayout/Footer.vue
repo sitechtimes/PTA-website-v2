@@ -5,9 +5,9 @@
         <img src="/logo/pta-logo.png" alt="PTA Logo" class="w-4/11" />
         <div id="links" class="mt-5 text-md">
           <NuxtLink to="/">Home</NuxtLink> |
-          <NuxtLink to="/Events">Events</NuxtLink> |
-          <NuxtLink to="/Contact">Contact Us</NuxtLink> |
-          <NuxtLink to="/Donate">Donate</NuxtLink>
+          <NuxtLink to="/events">Events</NuxtLink> |
+          <NuxtLink to="/contact">Contact Us</NuxtLink> |
+          <NuxtLink to="/donate">Donate</NuxtLink>
         </div>
         <h2 class="text-xs mt-2">SITHS PTA @2024</h2>
       </div>
