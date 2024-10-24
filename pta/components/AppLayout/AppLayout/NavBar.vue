@@ -11,7 +11,7 @@ import Menu from './menu.vue';
                 <img class="ml-2 mt-1 sm:mt-2 sm:ml-6 scale-75" id="ptaLogo" src="/public/navbarIcons/pta-logo.B2o53BpU.png">
             </NuxtLink>
         </div>
-        <div id="naV" class="grid grid-cols-4 invisible lg:visible col-span-3"> 
+        <div id="naV" class="grid grid-cols-4 max-[1100px]:hidden col-span-3"> 
              <div>
                 <NuxtLink to="/" @click="('page=index')" class="hover:opacity-50 flex flex-row text-lg font-bold">
                     <img class="size-8 mt-10 icon" id="home" src="/public/navbarIcons/house.DbJtZ1kr.svg"> 
