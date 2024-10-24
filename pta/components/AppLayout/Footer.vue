@@ -31,7 +31,7 @@
       </div>
       <div id="thirdSection" class="flex-1 w-full lg:w-auto mx-4">
         <h2 class="font-bold">About Us</h2>
-        <p class="text-sm my-3 mb-8">
+        <p class="text-sm mb-8">
           The mission of Staten Island Tech’s PTA is to support our school through advocacy, volunteerism, and fundraising. From our bake sales to our annual Spring Gala, we work diligently to raise money in order to financially support our school’s needs such as online and software services, facility upgrades, and social events/celebrations.
         </p>
         <NuxtLink to="/Donate" class="bg-dark-brown text-white p-3 text-sm rounded-lg">Donate Now!</NuxtLink>
