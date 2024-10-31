@@ -19,8 +19,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-
 const buttonType = ref('');
 function buttonClick(event) {
     buttonType.value = event.target.getAttribute("id");
