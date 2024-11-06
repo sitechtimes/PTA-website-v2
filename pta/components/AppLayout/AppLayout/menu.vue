@@ -1,7 +1,11 @@
 <template>
     <div class="menu fixed top-0 left-0 right-0">
         <div class="check fixed lg:top-10 lg:left-85 lg:right-5 top-10 lg-left-60 right-20 z-10">
-            <label for="check"></label>
+            <label for="check">
+              <div>asd</div>
+              <div>asd</div>
+              <div>asd</div>
+            </label>
             <!-- <i class="fa-solid fa-bars"></i> -->
             <input v-model="show" type="checkbox" value="check"/>
         </div>
