@@ -3,7 +3,7 @@
         <div class="check fixed lg:top-10 lg:left-85 lg:right-5 top-10 lg-left-60 right-20 z-10">
             <label for="check"></label>
             <!-- <i class="fa-solid fa-bars"></i> -->
-            <input v-model="show" @click="toggle" type="checkbox" value="check"/>
+            <input v-model="show" type="checkbox" value="check"/>
         </div>
     <Transition name="slide">
       
@@ -36,6 +36,10 @@
 </template>
 
 <script setup>
+// import gsap from 'gsap';
+import { ref } from 'vue';
+
+const show = ref(false)
 
 </script>
 
@@ -62,17 +66,9 @@
   }
 }
 
-/* .slide-enter-active {
-  animation: slide-right 0.4s;
-}
-
-.slide-leave-from,
-.slide-leave-active {
-  animation: slide-left 0.4s
-} */
 
 .slide-enter-active, .slide-leave-active {
-  animation: slide-right 0.6s;
+  animation: slide-right 0.4s;
 }
 
 .slide-enter-from, .slide-leave-to {
