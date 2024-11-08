@@ -1,6 +1,6 @@
 <template>
     <div id="container" class="mt-9 text-center flex flex-col justify-center">
-        <h1 class="text-5xl font-bold ">CONTACTS</h1>
+        <h1 id="heading" class="text-5xl font-bold ">CONTACTS</h1>
         <div id="buttons" class="text-3xl mt-8 font-semibold ">
             <button id="join" @click="buttonClick($event)"
                 :class="{'bg-white': buttonType === 'join'}" 
@@ -12,7 +12,7 @@
                 :class="{'bg-white': buttonType === 'slt'}" 
                 class="mx-1 hover:opacity-50 text-lg md:text-2xl xl:text-3xl w-3/12 md:w-2/12 xl:w-2/12 py-2 rounded-xl xl:mx-6">SLT</button>
         </div>
-        <div class="flex justify-center my-6">
+        <div id="description" class="flex justify-center my-6">
             <div v-if="buttonType === 'join'" class="bg-white rounded-3xl w-10/12 md:w-9/12 xl:w-7/12 p-10">
                 <p>Join us</p>
             </div>
@@ -27,14 +27,16 @@
 </template>
 
 <script setup>
+import gsap from 'gsap';
 const buttonType = ref('join');
 function buttonClick(event) {
     buttonType.value = event.target.id;
 }
-gsap.from(".container", {
-  opacity: 0, 
-  y: 100, 
-  duration: 1
+onMounted(() => {
+    var tl = gsap.timeline();
+    tl.from("#heading", {opacity: 0, y: 70, duration: 0.5})
+      .from("#buttons", {opacity: 0, y: 50, duration: 0.5})
+      .from("#description", {opacity: 0, y: 50, duration: 0.5})
 });
 </script>
 
