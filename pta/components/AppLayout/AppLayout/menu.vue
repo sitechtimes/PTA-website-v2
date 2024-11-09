@@ -1,12 +1,31 @@
 <template>
     <div class="menu fixed top-0 left-0 right-0">
         <div class="check fixed lg:top-10 lg:left-85 lg:right-5 top-10 lg-left-60 right-20 z-10">
-            <label for="check"></label>
-            <!-- <i class="fa-solid fa-bars"></i> -->
-            <input v-model="show" type="checkbox" value="check"/>
+            <label for="active" class="menu-btn flex flex-col gap-y-1 w-10 pt-2">
+              <div :class="{ 'opacity-0': show }" class="bg-[#483221] h-1 rounded-md">
+                <input v-model="show" type="checkbox" value="check" class="scale-150 w-10 opacity-0"/>
+              </div>
+              <!-- opacity-0 -->
+          
+               <Transition name="rotate-mid">
+                <div v-if="show" class="rotate-mid -rotate-45 bg-[#483221] h-1 rounded-md"></div>
+                <div v-else class="bg-[#483221] h-1 rounded-md"></div>
+              </Transition>
+              <!-- -rotate-45 -->
+
+              
+              <Transition name="rotate-bot">
+                <div v-if="show" class="rotate-45 -translate-y-[6px] bg-[#483221] h-1 rounded-md"></div>
+                <div v-else class="bg-[#483221] h-1 rounded-md"></div>
+              </Transition>
+
+              <!-- rotate-45 -translate-y-[6px] -->
+          </label>
+          <!-- <label class="menu-btn flex flex-col gap-y-2 w-max">
+            <input v-model="show" type="checkbox" value="check" class="content-none "/>
+          </label> -->
         </div>
     <Transition name="slide">
-      
         <div v-if="show" class="justify-self-auto bg-gradient-to-b from-[#ffb393] via-[#fff1d7] to-[#fff] w-screen h-dvh absolute z-0">
             <div class="mt-36 ml-16 space-y-8">
             <NuxtLink to="/" @click="('page=index')" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
@@ -30,7 +49,6 @@
             </NuxtLink>
             </div>
         </div>
-    
     </Transition>
   </div>
 </template>
@@ -39,7 +57,10 @@
 // import gsap from 'gsap';
 import { ref } from 'vue';
 
+
+
 const show = ref(false)
+
 
 </script>
 
@@ -61,11 +82,13 @@ const show = ref(false)
   0% {
     right: 0%;
   }
+  50%{
+    right:-100%;
+  }
   100% {
     right: -100%;
   }
 }
-
 
 .slide-enter-active, .slide-leave-active {
   animation: slide-right 0.4s;
@@ -74,4 +97,25 @@ const show = ref(false)
 .slide-enter-from, .slide-leave-to {
   animation: slide-left 0.3s
 }
+
+
+
+
+
+/* @keyframes rotate-pos{
+  100% {transform: rotate(45deg);}
+}
+
+.rotate-bot-enter-active, .rotate-leave-active{
+  animation: rotate-pos 0.4s;
+} 
+
+.rotate-bot-enter-from, .rotate-leave-to{
+  animation: rotate-pos 0.4s;
+} */
+
+
+
+
+
 </style>
