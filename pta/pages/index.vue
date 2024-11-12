@@ -1,7 +1,7 @@
 <template>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <div class="mx-14 lg:mx-20">
+    <MiddleSection/>
+</div>
 </template>
 
 <script setup>
