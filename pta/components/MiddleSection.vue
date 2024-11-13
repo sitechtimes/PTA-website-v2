@@ -13,10 +13,10 @@
     </div>
     <div id="activities">
     <h2 class="text-xl md:text-2xl lg:text-4xl font-bold my-6">ACTIVITIES</h2>
-      <Carousel class="lg:float-right"/>
     <p class="text-base md:text-lg lg:text-xl mt-5 lg:my-10">The SITHS PTA is a group of parents and faculty/staff members who work
        together to provide our children with resources and activities to make
        their school experience the best ever!</p>
+       <Carousel/>
   </div>
 </template>
 
