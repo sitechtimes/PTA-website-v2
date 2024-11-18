@@ -5,41 +5,31 @@
               <div :class="{ 'opacity-0': show }" class="bg-[#483221] h-1 rounded-md">
                 <input v-model="show" type="checkbox" value="check" class="scale-150 w-10 opacity-0"/>
               </div>
-              <!-- opacity-0 -->
-          
                <Transition name="rotate-mid">
                 <div v-if="show" class="rotate-mid -rotate-45 bg-[#483221] h-1 rounded-md"></div>
                 <div v-else class="bg-[#483221] h-1 rounded-md"></div>
               </Transition>
-              <!-- -rotate-45 -->
-
-              
               <Transition name="rotate-bot">
                 <div v-if="show" class="rotate-45 -translate-y-[6px] bg-[#483221] h-1 rounded-md"></div>
                 <div v-else class="bg-[#483221] h-1 rounded-md"></div>
               </Transition>
-
-              <!-- rotate-45 -translate-y-[6px] -->
           </label>
-          <!-- <label class="menu-btn flex flex-col gap-y-2 w-max">
-            <input v-model="show" type="checkbox" value="check" class="content-none "/>
-          </label> -->
         </div>
     <Transition name="slide">
         <div v-if="show" class="justify-self-auto bg-gradient-to-b from-[#ffb393] via-[#fff1d7] to-[#fff] w-screen h-dvh absolute z-0">
             <div class="mt-36 ml-16 space-y-8">
-            <NuxtLink to="/" @click="('page=index')" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
-                <img class="icon" id="home" src="/public/navbarIcons/house.DbJtZ1kr.svg">
+            <NuxtLink to="/" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
+                <img class="icon" id="home" src="/public/navbarIcons/house.svg">
                 <div class="self-center ml-2">HOME</div>
             </NuxtLink>
         
             <NuxtLink to="/events" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
-                <img class="icon" id="events" src="/public/navbarIcons/calendar.D_Rrp8xJ.svg">
+                <img class="icon" id="events" src="/public/navbarIcons/calendar.svg">
                 <div class="self-center ml-2">EVENTS</div>
             </NuxtLink>
 
             <NuxtLink to="/contacts" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
-                <img class=" icon" id="contacts" src="/public/navbarIcons/envelope.BpFCkuaU.svg">
+                <img class=" icon" id="contacts" src="/public/navbarIcons/envelope.svg">
                 <div class="self-center ml-2 whitespace-nowrap">JOIN US</div>
             </NuxtLink>
 
@@ -54,10 +44,7 @@
 </template>
 
 <script setup>
-// import gsap from 'gsap';
 import { ref } from 'vue';
-
-
 
 const show = ref(false)
 
