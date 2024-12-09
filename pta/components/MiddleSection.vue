@@ -21,3 +21,13 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { gsap } from 'gsap';
+onMounted(() => {
+    gsap.from("#activities", { opacity:0, x: 100, duration: 1 });
+});
+</script>
+
+<style scoped>
+</style>

@@ -1,100 +1,37 @@
 <template>
-    <div class="carousel h-60 w-auto sm:h-80 sm:w-3/4 mx-auto mt-6 lg:mt-0 lg:float-right flex rounded-3xl">
-  <div id="slide1" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel1.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide2" class="btn btn-circle">❯</a>
+  <div class="carousel h-60 w-auto sm:h-80 sm:w-3/4 mx-auto mt-6 lg:mt-0 lg:float-right flex rounded-3xl">
+    <div
+      v-for="(image, index) in images"
+      :key="index"
+      :id="'slide' + (index + 1)"
+      class="carousel-item relative w-full lg:h-80"
+    >
+      <img
+        :src="image.src"
+        class="w-full h-full object-cover"
+        :alt="image.alt"
+      />
+      <div class="absolute left-5 right-5 top-1/2 flex justify-between">
+        <a :href="'#slide' + (index === 0 ? images.length : index)" class="btn btn-circle">❮</a>
+        <a :href="'#slide' + ((index + 1) % images.length + 1)" class="btn btn-circle">❯</a>
+      </div>
     </div>
   </div>
-  <div id="slide2" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel2.png"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide1" class="btn btn-circle">❮</a>
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel3.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide2" class="btn btn-circle">❮</a>
-      <a href="#slide4" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide4" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel4.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide3" class="btn btn-circle">❮</a>
-      <a href="#slide5" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide5" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel5.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide6" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide6" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel6.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide5" class="btn btn-circle">❮</a>
-      <a href="#slide7" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide7" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel7.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex  justify-between">
-      <a href="#slide6" class="btn btn-circle">❮</a>
-      <a href="#slide8" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide8" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel8.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide7" class="btn btn-circle">❮</a>
-      <a href="#slide9" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide9" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel9.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide8" class="btn btn-circle">❮</a>
-      <a href="#slide10" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide10" class="carousel-item relative w-full lg:h-80">
-    <img
-      src="/public/photos/carousel10.jpg"
-      class="w-full h-full object-cover"/>
-    <div class="absolute left-5 right-5 top-1/2 flex justify-between">
-      <a href="#slide9" class="btn btn-circle">❮</a>
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
 </template>
 
 <script setup>
-
+const images =[
+{ src: '/photos/carousel1.jpg', alt: 'Image 1' },
+{ src: '/photos/carousel2.png', alt: 'Image 2' },
+{ src: '/photos/carousel3.jpg', alt: 'Image 3' },
+{ src: '/photos/carousel4.jpg', alt: 'Image 4' },
+{ src: '/photos/carousel5.jpg', alt: 'Image 5' },
+{ src: '/photos/carousel6.jpg', alt: 'Image 6' },
+{ src: '/photos/carousel7.jpg', alt: 'Image 7' },
+{ src: '/photos/carousel8.jpg', alt: 'Image 8' },
+{ src: '/photos/carousel9.jpg', alt: 'Image 9' },
+{ src: '/photos/carousel10.jpg', alt: 'Image 10' },
+]
 </script>
 
 <style scoped>
