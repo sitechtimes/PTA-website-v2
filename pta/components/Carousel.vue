@@ -31,6 +31,11 @@ const images =[
 { src: '/photos/carousel8.jpg', alt: 'Image 8' },
 { src: '/photos/carousel9.jpg', alt: 'Image 9' },
 { src: '/photos/carousel10.jpg', alt: 'Image 10' },
+{ src: '/photos/carousel11.jpg', alt: 'Image 11' },
+{ src: '/photos/carousel12.jpg', alt: 'Image 12' },
+{ src: '/photos/carousel13.jpg', alt: 'Image 13' },
+{ src: '/photos/carousel14.jpg', alt: 'Image 14' },
+{ src: '/photos/carousel15.jpg', alt: 'Image 15' },
 ]
 </script>
 
