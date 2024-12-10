@@ -43,7 +43,6 @@
             class="bg-[#C9B23A] rounded-full text-center place-content-center font-semibold text-white
             transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8 text-xl">
                 Read More
-                <!-- btw the doc links to an unseeable doc  -->
             </NuxtLink>
         </div>
     </div>
