@@ -10,8 +10,8 @@
             <button class="p-4 font-bold rounded-lg my-2 bg-dark-brown text-white">Donate Item</button>
         </a>
     </div>
-    <div id="monetary" class="my-16">
-        <h2 id="paragraph4" class="text-3xl font-bold">Monetary Donations</h2>
+    <div class="my-16">
+        <h2 id="monetary" class="text-3xl font-bold">Monetary Donations</h2>
         <p id="paragraph5" class="text-2xl my-6">Monetary donations are always graciously accepted throughout the school year. If you have already donated, we thank you for your generosity and support.</p>
         <p id="paragraph6" class="text-2xl my-6">To donate, please bring the completed form and donation to Ms. Barbara Malenfant’s office, Room 117</p>
     </div>
@@ -22,12 +22,15 @@
 import gsap from 'gsap';
 onMounted(() => {
     var tl = gsap.timeline();
-    tl.from("#title", {opacity: 0, y: 50, duration: 0.2})
-      .from("#bake", {opacity: 0, y: 10, duration: 0.1})
-      .from("#paragraph1", {opacity: 0, y: 10, duration: 0.1})
-      .from("#paragraph2", {opacity: 0, y: 10, duration: 0.2})
-      .from("#paragraph3", {opacity: 0, y: 10, duration: 0.2})
-      .from("button", {opacity: 0, y: 10, duration: 0.2})
+    tl.from("#title", {opacity: 0, y: 20, duration: 0.4})
+      .from("#bake", {opacity: 0, y: 20, duration: 0.4})
+      .from("#paragraph1", {opacity: 0, y: 20, duration: 0.4})
+      .from("#paragraph2", {opacity: 0, y: 20, duration: 0.4})
+      .from("#paragraph3", {opacity: 0, y: 20, duration: 0.4})
+      .from("button", {opacity: 0, y: 20, duration: 0.4})
+      .from("#monetary", {opacity: 0, y: 20, duration: 0.4})
+      .from("#paragraph5", {opacity: 0, y: 20, duration: 0.4})
+      .from("#paragraph6", {opacity: 0, y: 20, duration: 0.4})
 });
 </script>
 
