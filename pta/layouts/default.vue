@@ -1,7 +1,7 @@
 <template>
     <div>
-      <slot />
       <Resources/>
+      <slot />
       <AppLayoutFooter />
     </div>
   </template>
