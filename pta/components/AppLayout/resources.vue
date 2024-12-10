@@ -8,7 +8,7 @@
             <div class="col-span-2 text-lg">Contact Staten Island Technical High School.</div>
             <NuxtLink to="https://www.siths.org/apps/pages/index.jsp?uREC_ID=1555040&type=d&pREC_ID=1680913" 
             class="bg-[#C9B23A] rounded-full text-center place-content-center font-semibold text-white
-            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8">
+            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8 text-xl">
                 Read More
             </NuxtLink>
         </div>
@@ -19,7 +19,7 @@
             <div class="col-span-2 text-lg">Track Secondary Goals and Success</div>
             <NuxtLink to="https://id.naviance.com/" 
             class="bg-[#C9B23A] rounded-full text-center place-content-center font-semibold text-white
-            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8">
+            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8 text-xl">
                 Read More
             </NuxtLink>
         </div>
@@ -30,7 +30,7 @@
             <div class="col-span-2 text-lg">Keep Track of Student Documents and Official City Calendars</div>
             <NuxtLink to="https://www.schools.nyc.gov/"  
             class="bg-[#C9B23A] rounded-full text-center place-content-center font-semibold text-white
-            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8">
+            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8 text-xl">
                 Read More
             </NuxtLink>
         </div>
@@ -41,7 +41,7 @@
             <div class="col-span-2 text-lg">Read More About the PTA</div>
             <NuxtLink to="https://docs.google.com/document/d/1gNyKPMDOUxeW2AadJFuOXtla3jd_bzjw/edit?usp=sharing&ouid=109431569121511580485&rtpof=true&sd=true"
             class="bg-[#C9B23A] rounded-full text-center place-content-center font-semibold text-white
-            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8">
+            transition duration-150 ease-out hover:ease-in hover:opacity-50 mb-8 text-xl">
                 Read More
                 <!-- btw the doc links to an unseeable doc  -->
             </NuxtLink>
