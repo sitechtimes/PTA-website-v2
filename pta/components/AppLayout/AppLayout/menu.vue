@@ -10,7 +10,7 @@
                 <div v-else class="bg-[#483221] h-1 rounded-md"></div>
               </Transition>
               <Transition name="rotate-bot">
-                <div v-if="show" class="rotate-45 -translate-y-[6px] bg-[#483221] h-1 rounded-md"></div>
+                <div v-if="show" class="rotate-45 -translate-y-[7px] bg-[#483221] h-1 rounded-md"></div>
                 <div v-else class="bg-[#483221] h-1 rounded-md"></div>
               </Transition>
           </label>
@@ -22,17 +22,14 @@
                 <img class="icon" id="home" src="/public/navbarIcons/house.svg">
                 <div class="self-center ml-2">HOME</div>
             </NuxtLink>
-        
             <NuxtLink to="/events" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
                 <img class="icon" id="events" src="/public/navbarIcons/calendar.svg">
                 <div class="self-center ml-2">EVENTS</div>
             </NuxtLink>
-
             <NuxtLink to="/contacts" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
                 <img class=" icon" id="contacts" src="/public/navbarIcons/envelope.svg">
                 <div class="self-center ml-2 whitespace-nowrap">JOIN US</div>
             </NuxtLink>
-
             <NuxtLink to="/donate" class="w-11 hover:opacity-50 flex flex-row self-center text-lg font-bold">
                 <img class="icon" id="donate" src="/public/navbarIcons/creditCard.svg">
                 <div class="self-center ml-2">DONATE</div>
@@ -84,25 +81,4 @@ const show = ref(false)
 .slide-enter-from, .slide-leave-to {
   animation: slide-left 0.3s
 }
-
-
-
-
-
-/* @keyframes rotate-pos{
-  100% {transform: rotate(45deg);}
-}
-
-.rotate-bot-enter-active, .rotate-leave-active{
-  animation: rotate-pos 0.4s;
-} 
-
-.rotate-bot-enter-from, .rotate-leave-to{
-  animation: rotate-pos 0.4s;
-} */
-
-
-
-
-
 </style>
