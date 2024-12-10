@@ -5,7 +5,7 @@
                 <img class="ml-2 mt-1 sm:mt-2 sm:ml-6 scale-75" id="ptaLogo" src="/public/navbarIcons/pta-logo.png">
             </NuxtLink>
         </div>
-        <div id="naV" class="grid grid-cols-4 max-[1024px]:hidden col-span-3"> 
+        <div id="naV" class="hidden lg:grid grid-cols-4 col-span-3"> 
              <div>
                 <NuxtLink to="/" 
                     class="w-8 mt-10 hover:opacity-80 hover:transition-ease-in hover:underline hover:underline-offset-2 duration-150 flex flex-row text-lg font-bold">
