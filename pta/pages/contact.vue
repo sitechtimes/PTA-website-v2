@@ -1,6 +1,6 @@
 <template>
     <div id="container" class="mt-9 text-center flex flex-col justify-center">
-        <h1 id="heading" class="text-5xl font-bold ">CONTACTS</h1>
+        <h1 id="heading" class="text-4xl sm:text-5xl font-bold ">CONTACTS</h1>
         <div id="buttons" class="text-3xl mt-8 font-semibold ">
             <button id="join" @click="buttonClick($event)"
                 :class="{'bg-white': buttonType === 'join'}" 
@@ -35,8 +35,8 @@ function buttonClick(event) {
 onMounted(() => {
     var tl = gsap.timeline();
     tl.from("#heading", {opacity: 0, y: 70, duration: 0.5})
-      .from("#buttons", {opacity: 0, y: 50, duration: 0.5})
-      .from("#description", {opacity: 0, y: 50, duration: 0.5})
+      .from("#buttons", {opacity: 0, y: 50, duration: 0.5}, "-=0.1")
+      .from("#description", {opacity: 0, y: 50, duration: 0.5}, "-=0.1")
 });
 </script>
 
