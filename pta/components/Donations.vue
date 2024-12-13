@@ -22,7 +22,7 @@
 import gsap from 'gsap';
 onMounted(() => {
     var tl = gsap.timeline();
-    tl.from("#title", {opacity: 0, y: 20, duration: 0.5}, "-=0.3")
+    tl.from("#title", {opacity: 0, y: 20, duration: 0.5})
       .from("#bake", {opacity: 0, y: 20, duration: 0.5}, "-=0.3")
       .from("#paragraph1", {opacity: 0, y: 20, duration: 0.5}, "-=0.3")
       .from("#paragraph2", {opacity: 0, y: 20, duration: 0.5}, "-=0.3")
