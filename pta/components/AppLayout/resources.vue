@@ -1,8 +1,8 @@
 <template>
-    <header class="text-4xl font-bold m-5 font-kumbha">RESOURCES</header>
-    <div class="grid lg:grid-rows-2 lg:grid-cols-2 grid-flow-col gap-4 grid-rows-4 ml-5 mr-5">
+    <header class="text-4xl font-bold m-5 ml-12">RESOURCES</header>
+    <div class="grid grid-rows-2 lg:grid-cols-2 grid-flow-row gap-6 grid-rows-4 mx-12">
         <div class="bg-white rounded-xl grid grid-cols-3 grid-flow-col gap-4 h-64
-                    shadow-lg border border-primary border-opacity-60 border-[#312217]">
+                    shadow-lg border border-opacity-60 border-[#312217]">
             <img src="/resources/NEWSITHS_Logo.png" class="p-4 w-44 place-content-center row-span-3 justify-center self-center">
             <div class="col-span-2 font-bold text-2xl place-content-end">Automated Telephone Message Directory</div>
             <div class="col-span-2 text-lg">Contact Staten Island Technical High School.</div>
@@ -13,7 +13,7 @@
             </NuxtLink>
         </div>
         <div class="bg-white rounded-xl grid grid-cols-3 grid-flow-col gap-4 h-64 
-                    shadow-lg border border-primary border-opacity-60 border-[#312217]">
+                    shadow-lg border border-opacity-60 border-[#312217]">
             <img src="/resources/Naviance-Logo.png" class="p-4 w-44 place-content-center row-span-3 self-center">
             <div class="col-span-2 font-bold text-2xl place-content-end">Naviance</div>
             <div class="col-span-2 text-lg">Track Secondary Goals and Success</div>
@@ -24,7 +24,7 @@
             </NuxtLink>
         </div>
         <div class="bg-white rounded-xl grid grid-cols-3 grid-flow-col gap-4 h-64
-                    shadow-lg border border-primary border-opacity-60 border-[#312217]">
+                    shadow-lg border border-opacity-60 border-[#312217]">
             <img src="/resources/NycDoeLogo.png" class="p-4 w-52 place-content-center row-span-3 self-center">
             <div class="col-span-2 font-bold text-2xl place-content-end">NYCDOE Websites</div>
             <div class="col-span-2 text-lg">Keep Track of Student Documents and Official City Calendars</div>
@@ -35,7 +35,7 @@
             </NuxtLink>
         </div>
         <div class="bg-white rounded-xl grid grid-cols-3 grid-flow-col gap-4 h-64
-                    shadow-lg border border-primary border-opacity-60 border-[#312217]">
+                    shadow-lg border border-opacity-60 border-[#312217]">
             <img src="/logo/pta-logo.png" class="p-4 w-52 place-content-center row-span-3 self-center">
             <div class="col-span-2 font-bold text-2xl place-content-end">SITHS PTA By-Laws</div>
             <div class="col-span-2 text-lg">Read More About the PTA</div>
