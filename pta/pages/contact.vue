@@ -35,8 +35,8 @@ function buttonClick(event) {
 onMounted(() => {
     var tl = gsap.timeline();
     tl.from("#heading", {opacity: 0, y: 70, duration: 0.5})
-      .from("#buttons", {opacity: 0, y: 50, duration: 0.5}, "-=0.1")
-      .from("#description", {opacity: 0, y: 50, duration: 0.5}, "-=0.1")
+      .from("#buttons", {opacity: 0, y: 50, duration: 0.5})
+      .from("#description", {opacity: 0, y: 50, duration: 0.5})
 });
 </script>
 
