@@ -13,14 +13,14 @@
                 class="mx-1 hover:opacity-80 duration-500 text-lg md:text-2xl xl:text-3xl w-1/4 md:w-1/6 xl:w-1/6 py-2 rounded-xl xl:mx-6">The SLT</button>
         </div>
         <div id="description" class="flex justify-center my-6">
-            <div v-if="buttonType === 'join'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-10 ">
+            <div v-if="buttonType === 'join'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-6 md:p-12">
                 <JoinUs></JoinUs>
             </div>
-            <div v-if="buttonType === 'staff'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-10">
-                <p>Different staff</p>
+            <div v-if="buttonType === 'staff'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-6 md:p-12">
+                <Staff></Staff>
             </div>
-            <div v-if="buttonType === 'slt'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-10">
-                <p>The SLT</p>
+            <div v-if="buttonType === 'slt'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-6 md:p-12">
+                <SLT></SLT>
             </div>
         </div>
     </div>
