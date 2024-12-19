@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-wrap flex-col">
+    <div class="flex flex-wrap">
     <div v-for="(profile, index) in profiles"
     :key="index"
-     id="profile" class="content-center">
+     id="profile" class="content-center lg:w-1/2 2xl:w-1/3 my-4 flex items-center flex-col">
         <img src="/pfps/default-profile.webp" alt="pfp" class="w-1/4 rounded-full">
-        <h2 class="text-sm">{{ profile.name }}</h2>
-        <p class="text-sm">{{ profile.email }}</p>
+        <h2 class="text-base md:text-xl my-4 font-bold">{{ profile.name }}</h2>
+        <p class="text-base md:text-xl mt-2 mb-6">{{ profile.email }}</p>
     </div>
 </div>
 </template>
