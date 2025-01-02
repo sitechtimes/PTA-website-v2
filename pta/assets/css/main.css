@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body {
-  @apply text-light-brown font-kumbha;
+  @apply text-light-brown font-karla;
   font-synthesis: none;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -29,3 +29,5 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+
