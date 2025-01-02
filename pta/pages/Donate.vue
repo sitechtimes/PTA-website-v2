@@ -1,4 +1,5 @@
 <template>
+    <Donations></Donations>
 </template>
 
 <script setup>
