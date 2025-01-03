@@ -3,7 +3,7 @@
         Hello world!
     </h1> -->
     <div>
-        <Resources/>
+        <AppLayoutResources/>
     </div>
 </template>
 
