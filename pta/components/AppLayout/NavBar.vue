@@ -2,7 +2,7 @@
     <header id="navbar" class="grid grid-cols-5 z-80">
         <div id="logoContainer" class="col-span-2">
             <NuxtLink to="/">
-                <img class="ml-2 mt-1 sm:mt-2 sm:ml-6 scale-75" id="ptaLogo" src="/public/navbarIcons/pta-logo.png">
+                <img class="ml-2 mt-1 sm:mt-2 sm:ml-6 scale-75" id="ptaLogo" src="/logo/ptaLogo.png">
             </NuxtLink>
         </div>
         <div id="naV" class="hidden lg:grid grid-cols-4 col-span-3"> 
