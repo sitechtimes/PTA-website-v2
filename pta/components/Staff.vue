@@ -1,13 +1,13 @@
 <template>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap justify-around">
     <div v-for="(profile, index) in profiles"
     :key="index"
-     id="profile" class="content-center md:w-1/2 2xl:w-1/3 my-4 flex items-center flex-col">
-        <img :src="profile.pfp" alt="pfp" class="rounded-full w-5/12">
-        <h2 class="text-base sm:text-xl my-4 font-bold">{{ profile.name }}</h2>
-        <p class="text-base sm:text-xl mt-2 mb-6">{{ profile.position }}</p>
-        <p class="text-sm sm:text-lg mt-2">{{ profile.email }}</p>
-        <p class="text-sm sm:text-lg  mt-4 mb-6">{{ profile.phone }}</p>
+     id="profile" class="content-center w-3/4 sm:w-1/2 2xl:w-1/3 my-4 flex items-center justify-center flex-col">
+        <img :src="profile.pfp" alt="pfp" class="rounded-full w-4/6 h-4/6 md:w-36 md:h-36">
+        <h2 class="text-lg sm:text-xl my-4 font-bold">{{ profile.name }}</h2>
+        <p class="text-lg sm:text-xl mt-2 mb-4">{{ profile.position }}</p>
+        <p class="text-base sm:text-lg mt-2">{{ profile.email }}</p>
+        <p class="text-base sm:text-lg  mt-4 mb-6">{{ profile.phone }}</p>
     </div>
 </div>
 </template>
