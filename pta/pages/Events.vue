@@ -1,5 +1,5 @@
 <template>
-<div class="static">
+<div class="">
     <div class="grid grid-rows-2 md:grid-cols-2 gap-12 m-8 mt-16">
         <div class="rows-2">
             <div class="">
@@ -22,8 +22,9 @@
         </div>
     </div>
 
-    <div v-if="appear" class="fixed top-0 left-0">
-        <div class="bg-white shadow-lg">
+    <div v-if="appear" class="fixed top-1/2 left-24">
+        <div class="bg-white shadow-lg w-56">
+            <input type="button">
             box
         </div>
     </div>
