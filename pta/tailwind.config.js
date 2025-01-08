@@ -16,7 +16,7 @@ module.exports = {
         'light-yellow': '#fce5ac',
       },
       fontFamily: {
-        kumbha: ['"Kumbha Sans"', 'sans-serif'],
+        karla: ['"Karla"', 'sans-serif'],
       },
     },
   },

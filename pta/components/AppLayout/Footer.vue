@@ -6,7 +6,7 @@
         <div id="links" class="mt-5 text-md">
           <NuxtLink to="/">Home</NuxtLink> |
           <NuxtLink to="/events">Events</NuxtLink> |
-          <NuxtLink to="/contact">Contact Us</NuxtLink> |
+          <NuxtLink to="/contacts">Contact Us</NuxtLink> |
           <NuxtLink to="/donate">Donate</NuxtLink>
         </div>
         <p class="text-xs mt-2">SITHS PTA @2024</p>
