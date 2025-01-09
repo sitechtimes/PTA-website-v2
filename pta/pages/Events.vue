@@ -22,10 +22,22 @@
         </div>
     </div>
 
-    <div v-if="appear" class="fixed top-1/2 left-24">
-        <div class="bg-white shadow-lg w-56">
+    <div v-if="appear" class="fixed inset-y-1/4 w-svw">
+        <div class="bg-white h-96">
             <input type="button">
-            box
+                <div>
+                    event name
+                </div>
+                <div>
+                    event date
+                </div>
+                <div>
+
+                </div>
+            <div>
+
+            </div>
+        
         </div>
     </div>
 </div>
