@@ -25,6 +25,7 @@
 <script setup>
 import { gsap } from 'gsap';
 onMounted(() => {
+   gsap.from("#aboutUs", { opacity:0, x: 100, duration: 1 });
     gsap.from("#activities", { opacity:0, x: 100, duration: 1 });
 });
 </script>
