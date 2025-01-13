@@ -1,5 +1,7 @@
 <template>
-    <MiddleSection/>
+    <div class="mx-10">
+        <MiddleSection/>
+    </div>
 </template>
 
 <script setup>
