@@ -14,6 +14,8 @@ module.exports = {
         'light-brown': '#483221',
         'dark-brown': '#312217',
         'light-yellow': '#fce5ac',
+        'salmon-orange': '#ffb393',
+        'light-orange': '#ffdcbc', 
       },
       fontFamily: {
         karla: ['"Karla"', 'sans-serif'],
