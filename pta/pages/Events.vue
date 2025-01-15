@@ -49,24 +49,27 @@
         </div>
     </div>
 
-    <div v-if="appear" class="fixed inset-y-1/4 w-10/12">
-        <!-- ps-16 pe-16 md:ps-56 md:pe-56 lg:ps-72 lg:pe-72 xl:ps-96 xl:pe-96 -->
-        <div class="bg-white h-96">
-                <div @click="notShow">
+    <div v-if="appear" class="fixed inset-y-1/4 w-full">
+            <div class="bg-white h-96 w-2/3 md:w-1/2 lg:w-1/3 justify-self-center rounded-lg backdrop-blur-xl">
+                <div @click="notShow" class="">
                     x
                 </div>
                 <div class="grid grid-rows-3 gap-4">
-                    <div>
+                    <div class="font-bold font-lg">
                         event name
                     </div>
-                    <div>
+                    <div class="">
                         event date
                     </div>
                     <div>
                         event details
                     </div>
                 </div>
-        </div>
+            </div>
+    </div>
+
+    <div v-if="appear" class="bg-black h-60">
+
     </div>
 </div>
 </template>
