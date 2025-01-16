@@ -2,10 +2,10 @@
     <div class="flex flex-wrap justify-around">
     <div v-for="(profile, index) in profiles"
     :key="index"
-     id="profile" class="content-center w-1/2 2xl:w-1/3 my-4 flex items-center text-center flex-col">
+     id="profile" class="content-center w-1/2 2xl:w-1/3 my-4 flex items-center text-center flex-col px-1">
         <img :src="profile.pfp" alt="pfp" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36">
         <h2 class="text-sm sm:text-xl mt-2 font-bold">{{ profile.name }}</h2>
-        <p class="text-sm sm:text-xl mt-2">{{ profile.position }}</p>
+        <p class="text-sm sm:text-xl mt-2 text-wrap">{{ profile.position }}</p>
         <p class="text-xs sm:text-lg mt-2">{{ profile.email }}</p>
         <p class="text-xs sm:text-lg  mt-2 mb-4">{{ profile.phone }}</p>
     </div>
@@ -64,7 +64,7 @@ const profiles = [
     {
         name: "Barbara Malenfant",
         pfp: "/pfps/NycDoeLogo.png",
-        email: "BMalenfant@schools.nyc.gov",
+        email: "BMalenfant @schools.nyc.gov",
         position: "Parent Coordinator",
         phone: "347-563-4563",
     },
