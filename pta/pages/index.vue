@@ -1,9 +1,7 @@
 <template>
-
-    <!-- <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1> -->
-    <AppLayoutLanding/>
+    <div class="mx-10">
+        <MiddleSection/>
+    </div>
 </template>
 
 <script setup>
