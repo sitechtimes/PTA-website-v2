@@ -50,7 +50,7 @@
     </div>
 
     <div v-if="appear">
-        <div class="bg-black/[0.6] h-full w-full fixed top-0">
+        <div class="bg-black/60 h-full w-full fixed top-0">
         <div class="m-48">
             <div class="bg-white h-96 justify-self-center rounded-lg p-4">
                 <!-- md:w-1/2 lg:w-1/3  -->
@@ -68,13 +68,13 @@
                         event details
                     </div>
                     <div class="flex flex-row gap-x-4">
-                        <div class="bg-light-brown w-1/3 p-2 rounded-md hover:bg-dark-brown hover:transition-ease-in duration-150">
+                        <div class="bg-light-brown w-1/3 p-2 rounded-md hover:bg-dark-brown hover:transition-ease-in duration-300">
                             <NuxtLink to="/events">
                                 <!-- og site doesnt link to anything -->
                                 <div class="font-semibold text-white justify-self-center">Volunteer</div>
                             </NuxtLink>
                         </div>
-                        <div class="bg-light-brown w-1/3 p-2 rounded-md hover:bg-dark-brown hover:transition-ease-in duration-150">
+                        <div class="bg-light-brown w-1/3 p-2 rounded-md hover:bg-dark-brown hover:transition-ease-in duration-300">
                             <NuxtLink to="/events">
                                 <!-- og site doesnt link to anything -->
                                 <div class="font-semibold text-white justify-self-center ">Donate</div>
