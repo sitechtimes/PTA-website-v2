@@ -49,32 +49,51 @@
         </div>
     </div>
 
-    <div v-if="appear" class="fixed inset-y-1/4 w-full">
-            <div class="bg-white h-96 w-2/3 md:w-1/2 lg:w-1/3 justify-self-center rounded-lg backdrop-blur-xl">
-                <div @click="notShow" class="">
-                    x
+    <div v-if="appear">
+        <div class="bg-black/[0.6] h-full w-full fixed top-0">
+        <div class="m-48">
+            <div class="bg-white h-96 justify-self-center rounded-lg p-4">
+                <!-- md:w-1/2 lg:w-1/3  -->
+                <div @click="notShow" class="justify-self-end font-extrabold text-xl">
+                    ✖
                 </div>
-                <div class="grid grid-rows-3 gap-4">
-                    <div class="font-bold font-lg">
+                <div class="flex flex-col whitespace-nowrap w-64 md:w-80 gap-4">
+                    <div class="font-extrabold text-xl flex-none">
                         event name
                     </div>
-                    <div class="">
+                    <div class="font-semibold">
                         event date
                     </div>
-                    <div>
+                    <div class="font-semibold">
                         event details
                     </div>
+                    <div class="flex flex-row gap-x-4">
+                        <div class="bg-light-brown w-1/3 p-2 rounded-md hover:bg-dark-brown hover:transition-ease-in duration-150">
+                            <NuxtLink to="/events">
+                                <!-- og site doesnt link to anything -->
+                                <div class="font-semibold text-white justify-self-center">Volunteer</div>
+                            </NuxtLink>
+                        </div>
+                        <div class="bg-light-brown w-1/3 p-2 rounded-md hover:bg-dark-brown hover:transition-ease-in duration-150">
+                            <NuxtLink to="/events">
+                                <!-- og site doesnt link to anything -->
+                                <div class="font-semibold text-white justify-self-center ">Donate</div>
+                            </NuxtLink>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-    </div>
-
-    <div v-if="appear" class="bg-black h-60">
-
+        </div>
+        </div>
     </div>
 </div>
+
+
 </template>
 
 <script setup>
+
 const appear = ref(false)
 
 function show(){
