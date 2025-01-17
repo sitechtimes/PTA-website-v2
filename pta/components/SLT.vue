@@ -2,9 +2,9 @@
     <div class="flex flex-wrap">
     <div v-for="(profile, index) in profiles"
     :key="index"
-     id="profile" class="content-center w-1/2 2xl:w-1/3 my-4 flex items-center text-center flex-col">
+     id="profile" class="content-center w-1/2 2xl:w-1/3 my-4 flex items-center text-center text-wrap flex-col">
         <img src="/pfps/default-profile.webp" alt="{{ profile.name }}" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36">
-        <h2 class="text-sm sm:text-xl mt-2 font-bold text-nowrap">{{ profile.name }}</h2>
+        <h2 class="text-sm sm:text-xl mt-2 font-bold">{{ profile.name }}</h2>
         <p class="text-xs sm:text-lg mt-2 text-wrap">{{ profile.email }}</p>
     </div>
 </div>
@@ -14,15 +14,15 @@
 const profiles = [
     {
         name: "Inga Smolyar",
-        email: "IngaSmolyar@gmail.com",
+        email: "IngaSmolyar @gmail.com",
     },
     {
         name: "Lai Wan",
-        email: "100110601@gmail.com",
+        email: "100110601 @gmail.com",
     },
     {
         name: "Melina Gontha",
-        email: "melinagontha@gmail.com",
+        email: "melinagontha @gmail.com",
     },
     {
         name: "Michael Shmulsenson",
@@ -30,7 +30,7 @@ const profiles = [
     },
     {
         name: "Mike Nguyen",
-        email: "MikeNguyen@gmail.com",
+        email: "MikeNguyen @gmail.com",
     },
 ]
 </script>
