@@ -1,4 +1,5 @@
 <template>
+    <Landing/>
     <div class="mx-10">
         <MiddleSection/>
     </div>
