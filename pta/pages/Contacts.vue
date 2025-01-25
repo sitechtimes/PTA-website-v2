@@ -1,7 +1,7 @@
 <template>
-    <div id="container" class="mt-9 text-center flex flex-col justify-center">
-        <h1 id="heading" class="text-4xl sm:text-5xl font-bold ">CONTACTS</h1>
-        <div id="buttons" class="text-3xl mt-8 font-semibold ">
+    <div id="container" class="mt-9 flex flex-col justify-center">
+        <h1 id="heading" class="text-4xl sm:text-5xl font-bold text-center">CONTACTS</h1>
+        <div id="buttons" class="text-3xl mt-8 font-semibold text-center">
             <button id="join" @click="buttonClick($event)"
                 :class="{'bg-white': buttonType === 'join'}" 
                 class="mx-1 hover:opacity-70 duration-500 text-lg md:text-2xl xl:text-3xl w-1/4 md:w-1/6 xl:w-1/6 py-2 rounded-xl xl:mx-6">Join Us</button>
@@ -13,14 +13,14 @@
                 class="mx-1 hover:opacity-70 duration-500 text-lg md:text-2xl xl:text-3xl w-1/4 md:w-1/6 xl:w-1/6 py-2 rounded-xl xl:mx-6">The SLT</button>
         </div>
         <div id="description" class="flex justify-center my-6">
-            <div v-if="buttonType === 'join'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-10">
-                <p>Join us</p>
+            <div v-if="buttonType === 'join'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-4 md:p-12">
+                <JoinUs></JoinUs>
             </div>
-            <div v-if="buttonType === 'staff'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-10">
-                <p>Different staff</p>
+            <div v-if="buttonType === 'staff'" class="bg-white rounded-3xl w-11/12 md:w-3/4 xl:w-7/12 pt-4 md:p-12">
+                <Staff></Staff>
             </div>
-            <div v-if="buttonType === 'slt'" class="bg-white rounded-3xl w-5/6 md:w-3/4 xl:w-7/12 p-10">
-                <p>The SLT</p>
+            <div v-if="buttonType === 'slt'" class="bg-white rounded-3xl w-11/12 md:w-3/4 xl:w-7/12 pt-4 md:p-12">
+                <SLT></SLT>
             </div>
         </div>
     </div>
