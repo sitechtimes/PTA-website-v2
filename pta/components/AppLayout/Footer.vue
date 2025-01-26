@@ -2,7 +2,7 @@
   <footer>
     <div id="sections" class="flex flex-col items-center sm:flex-row my-7 mx-4 xl:mx-14 p-4">
       <div id="firstSection" class="flex-1 w-full lg:w-auto mx-4 mb-8 lg:mb-0">
-        <img src="/logo/pta-logo.png" alt="PTA Logo" class="w-4/11" />
+        <img src="/logo/ptaLogo.png" alt="PTA Logo" class="w-4/11" />
         <div id="links" class="mt-5 text-md">
           <NuxtLink to="/">Home</NuxtLink> |
           <NuxtLink to="/events">Events</NuxtLink> |
